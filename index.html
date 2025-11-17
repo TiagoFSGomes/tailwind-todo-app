@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/style/output.css" rel="stylesheet">
+    <title>ToDo App</title>
+</head>
+
+<body class="flex">
+
+    <!--Menu-->
+    <div class="min-w-xs h-screen bg-[#141E33]">
+        <div class="w-full h-16 bg-[#141E33] flex justify-center items-center text-xl uppercase font-bold">
+            <h2 class="text-white">ToDo<span class="text-gray-500">Dev</span>Code</h2>
+        </div>
+        <div class="flex justify-center my-6">
+            <button class="py-3 px-4 w-[80%]  bg-[#6D28D9] rounded-md text-white
+                    cursor-pointer hover:opacity-80">Adicionar Tarefa
+            </button>
+
+            <div class="">
+
+            </div>
+
+        </div>
+    </div>
+
+    <!--Parte do content-->
+    <div class="w-full h-screen bg-[#0F172A]">
+        <div class="w-full h-16 bg-[#0F172A] flex items-center justify-between px-6">
+            <input type="text" class="w-xs py-2 pl-2 bg-[#141EE33] text-[#94A3B8]
+                        rounded-md border-2 border-[#0F172A] hover:border-[#6D28D9]
+                        focus:border-[#6D28D9] outline-none" placeholder="Pesquisar">
+
+            <div class="w-56">
+                <p class="text-xs text-[#94A3B8] font-bold">Execução (%)</p>
+                <div class="flex items-center gap-2">
+                    <div class="w-full h-2 bg-[#141E33] rounded-md">
+                        <div class="w-[20%] h-full bg-[#6D28D9] rounded-md"></div>
+                    </div>
+                    <p class="text-xs font-bold text-[#94A3B8]">3/12</p>
+                </div>
+            </div>
+            <button class="py-2 px-4 bg-[#6D28D9] rounded-md text-white
+                    cursor-pointer hover:opacity-80">AdicionarTarefa
+            </button>
+        </div>
+    </div>
+
+</body>
+
+</html>
