@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./src/style/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>ToDo App</title>
 </head>
 
@@ -15,15 +19,22 @@
         <div class="w-full h-16 bg-[#141E33] flex justify-center items-center text-xl uppercase font-bold">
             <h2 class="text-white">ToDo<span class="text-gray-500">Dev</span>Code</h2>
         </div>
+
         <div class="flex justify-center my-6">
             <button class="py-3 px-4 w-[80%]  bg-[#6D28D9] rounded-md text-white
                     cursor-pointer hover:opacity-80">Adicionar Tarefa
             </button>
+        </div>
 
-            <div class="">
-
-            </div>
-
+        <div class="w-full h-80 px-2">
+            <ul class="flex flex-col gap-1">
+                <li class="py-3 pl-3 bg-[#1A253A] text-[#94A388] cursor-pointer">Todas as atividades
+                    (10)</li>
+                <li class="py-3 pl-3  text-[#94A388] hover:text-white cursor-pointer">Importantes(8)</li>
+                <li class="py-3 pl-3  text-[#94A388] hover:text-white cursor-pointer">Finalizadas (3)</li>
+                <li class="py-3 pl-3  text-[#94A388] hover:text-white cursor-pointer">Não finalizadas(7)
+                </li>
+            </ul>
         </div>
     </div>
 
@@ -47,6 +58,15 @@
                     cursor-pointer hover:opacity-80">AdicionarTarefa
             </button>
         </div>
+
+        <h2 class="px-6 mt-8 text-xl font-bold text-[#94A3B8]">Todas as atividades (0)</h2>
+
+        <div class="flex gap-2 px-6 mt-12">
+            <i class="fa-solid fa-list text-2xl cursor-pointer text-[#94A3B8]"></i>
+            <i class="fa-brands fa-buromobelexperte text-2xl cursor-pointer text-[#6D28D9]"></i>
+        </div>
+
+
     </div>
 
 </body>
