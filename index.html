@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./src/style/style.css">
 
     <title>ToDo App</title>
 </head>
 
-<body class="flex">
+<body class="flex relative">
 
     <!--Menu-->
     <div class="min-w-xs h-screen bg-[#141E33]">
@@ -65,8 +66,47 @@
             <i class="fa-solid fa-list text-2xl cursor-pointer text-[#94A3B8]"></i>
             <i class="fa-brands fa-buromobelexperte text-2xl cursor-pointer text-[#6D28D9]"></i>
         </div>
+    </div>
 
+    <!--MODEL Adicionar tarefas-->
+    <div class="w-full h-screen bgTransparente absolute flex justify-center items-center">
+        <div class="w-lg bg-[#0F172A] p-6">
+            <div class="flex justify-between items-center">
+                <p class="text-xl font-bold text-white">Adicionar tarefa</p>
+                <i class="fa-solid fa-xmark font-bold text-xl cursor-pointer text-white"></i>
+            </div>
 
+            <div class="mt-4">
+                <label for="" class="text-[#94A3B8] text-sm">Atividade</label>
+                <input type="text" class="w-full py-2 pl-2 bg-[#141EE33] text-[#94A3B8]
+                        rounded-md border-2 border-[#0F172A] hover:border-[#6D28D9]
+                        focus:border-[#6D28D9] outline-none" placeholder="Ir ao mercado">
+            </div>
+
+            <div class="mt-3">
+                <label for="" class="text-[#94A3B8] text-sm">Descrição (opcional)</label>
+                <input type="text" class="w-full py-2 pl-2 bg-[#141EE33] text-[#94A3B8]
+                        rounded-md border-2 border-[#0F172A] hover:border-[#6D28D9]
+                        focus:border-[#6D28D9] outline-none" placeholder="na quinta-feira">
+            </div>
+
+            <div class="mt-3">
+                <label for="" class="text-[#94A3B8] text-sm">Prazo</label>
+                <input type="date" class="w-full py-2 pl-2 bg-[#141EE33] text-[#94A3B8]
+                        rounded-md border-2 border-[#0F172A] hover:border-[#6D28D9]
+                        focus:border-[#6D28D9] outline-none" placeholder="Pesquisar">
+            </div>
+
+            <div class="flex gap-2 items-center mt-2">
+                <input type="checkbox" id="checkbox-importante" class="h-4 w-4">
+                <label for="checkbox-importante" class="text-white">Marcar como importante</label>
+            </div>
+
+            <button class=" mt-10 py-3 w-full bg-[#6D28D9] rounded-md text-white
+                    cursor-pointer hover:opacity-80">AdicionarTarefa
+            </button>
+
+        </div>
     </div>
 
 </body>
