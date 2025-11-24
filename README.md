@@ -43,13 +43,13 @@ Este é um aplicativo web de gerenciamento de tarefas (ToDo List) desenvolvido c
 
 ### Estrutura do Projeto
 
-├── index.html          # Página principal<br>   
-├── src/<br>  
-│   ├── style/ <br> 
-│   │   ├── output.css  # Estilos compilados do Tailwind <br> 
-│   │   └── style.css   # Estilos personalizados  <br>
-│   └── script/  <br>
-│       └── script.js   # Lógica da aplicação  <br>
+    ├── index.html          # Página principal
+    ├── src/
+    │   ├── style/
+    │   │   ├── output.css  # Estilos compilados do Tailwind
+    │   │   └── style.css   # Estilos personalizados
+    │   └── script/
+    │       └── script.js   # Lógica da aplicação
 
 ### Como Utilizar
 1. Clone o repositório
