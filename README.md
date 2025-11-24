@@ -20,15 +20,15 @@ Este é um aplicativo web de gerenciamento de tarefas (ToDo List) desenvolvido c
  - Interface responsiva e moderna
 
 ### Tecnologias Utilizadas
- - **HTML5** - Estruturação do conteúdo
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) - Estruturação do conteúdo
 
- - **Tailwind CSS** - Framework CSS para estilização - Docs: https://tailwindcss.com/
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white) - Framework CSS - [Docs](https://tailwindcss.com/)
 
- - **JavaScript** - Funcionalidades e interatividade
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) - Funcionalidades e interatividade
 
- - **Font Awesome** - Ícones e elementos visuais - Acesse: https://fontawesome.com/
+![Font Awesome](https://img.shields.io/badge/Font_Awesome-528DD7?style=for-the-badge&logo=font-awesome&logoColor=white) - Ícones - [Acesse](https://fontawesome.com/)
 
- - **Local Storage API** - Armazenamento local de dados
+![Local Storage](https://img.shields.io/badge/Local_Storage-008000?style=for-the-badge) - Armazenamento local
 
 ### Características Técnicas
  - Design System: Interface com cores escuras e tons de roxo (#6D28D9) para melhor experiência visual
