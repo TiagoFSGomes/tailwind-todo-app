@@ -42,6 +42,7 @@ Este é um aplicativo web de gerenciamento de tarefas (ToDo List) desenvolvido c
  - Cards Dinâmicos: Visualização em grid das tarefas cadastradas
 
 ### Estrutura do Projeto
+
 ├── index.html          # Página principal
 ├── src/
 │   ├── style/
@@ -49,6 +50,7 @@ Este é um aplicativo web de gerenciamento de tarefas (ToDo List) desenvolvido c
 │   │   └── style.css   # Estilos personalizados
 │   └── script/
 │       └── script.js   # Lógica da aplicação
+
 ### Como Utilizar
 1. Clone o repositório
 
