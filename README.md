@@ -20,15 +20,15 @@ Este é um aplicativo web de gerenciamento de tarefas (ToDo List) desenvolvido c
  - Interface responsiva e moderna
 
 ### Tecnologias Utilizadas
- - HTML5 - Estruturação do conteúdo
+ - **HTML5** - Estruturação do conteúdo
 
- - Tailwind CSS - Framework CSS para estilização - Docs: https://tailwindcss.com/
+ - **Tailwind CSS** - Framework CSS para estilização - Docs: https://tailwindcss.com/
 
- - JavaScript - Funcionalidades e interatividade
+ - **JavaScript** - Funcionalidades e interatividade
 
- - Font Awesome - Ícones e elementos visuais: Acesse: https://fontawesome.com/
+ - **Font Awesome** - Ícones e elementos visuais: Acesse: https://fontawesome.com/
 
- - Local Storage API - Armazenamento local de dados
+ - **Local Storage API** - Armazenamento local de dados
 
 ### Características Técnicas
  - Design System: Interface com cores escuras e tons de roxo (#6D28D9) para melhor experiência visual
