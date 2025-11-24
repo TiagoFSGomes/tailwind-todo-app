@@ -22,11 +22,11 @@ Este é um aplicativo web de gerenciamento de tarefas (ToDo List) desenvolvido c
 ### Tecnologias Utilizadas
  - HTML5 - Estruturação do conteúdo
 
- - Tailwind CSS - Framework CSS para estilização
+ - Tailwind CSS - Framework CSS para estilização - Docs: https://tailwindcss.com/
 
  - JavaScript - Funcionalidades e interatividade
 
- - Font Awesome - Ícones e elementos visuais: Link: https://fontawesome.com/
+ - Font Awesome - Ícones e elementos visuais: Acesse: https://fontawesome.com/
 
  - Local Storage API - Armazenamento local de dados
 
