@@ -26,7 +26,7 @@ Este é um aplicativo web de gerenciamento de tarefas (ToDo List) desenvolvido c
 
  - **JavaScript** - Funcionalidades e interatividade
 
- - **Font Awesome** - Ícones e elementos visuais: Acesse: https://fontawesome.com/
+ - **Font Awesome** - Ícones e elementos visuais - Acesse: https://fontawesome.com/
 
  - **Local Storage API** - Armazenamento local de dados
 
