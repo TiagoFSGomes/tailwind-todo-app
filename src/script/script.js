@@ -31,7 +31,7 @@ function getInfoByAddForm() {
     const inputPrazo = document.getElementById('add-prazo').value;
     const inputImportante = document.getElementById('add-importante').checked;
 
-    //Armezar informações coletadas em um objeto
+    //Armezar em um array informações coletadas em um objeto
     const inputObj = {
         atividade: inputAtividade,
         descricao: inputDescricao,
@@ -47,17 +47,61 @@ function getInfoByAddForm() {
 }
 
 /*
-Função armazenar dados localmente
+Função armazenar dados localmente dentro de uma array
 */
 function addToLocalStorage(Obj) {
-    localStorage.setItem('tarefas', JSON.stringify(Obj));
+
+    const data = getFromLocalStorage();
+
+    localStorage.setItem('tarefas', JSON.stringify([Obj]));
 }
 /*
 Função responsável por resgatar e decodificar os dados da tarefa que foram salvos na memória local do navegador
 */
 function getFromLocalStorage() {
-    const data = JSON.parse(localStorage.getItem('tarefas'));
-    console.log(data);
-    return data;
+    const checkLocalStorage = JSON.parse(localStorage.getItem('tarefas'));
+
+    if ()//Continuar...
+
+        return data;
 }
-getFromLocalStorage();
+//getFromLocalStorage(); APAGAR
+
+/*
+Função para renderizar os cards
+*/
+function buildCards() {
+    const renderArea = document.getElementById('render-area');
+    const data = getFromLocalStorage();
+
+    const div = document.createElement('div');
+    div.classList = 'h-56 bg-[#6d28d9] rounded-md p-6 hover:opacity-80';
+
+    div.innerHTML = `
+                           <p class="font-bold text-white text-xl">${data[0].atividade}</p>
+                <div class="flex flex-col justify-between h-[90%]">
+                    <p class="text-xs text-[#94A3B8]">${data[0].descricao}</p>
+                    <div>
+                        <div class="flex  items-center gap-2  text-white text-base">
+                            <i class="fa-regular fa-calendar-days"></i>
+                            <p>${data[0].prazo}</p>
+                        </div>
+                        <div class="w-full border-b border-dashed border-[#94A3B8] mt-4"></div>
+
+                        <div class="flex justify-between items-center mt-4">
+                            <div class="py-1 px-4 bg-white rounded-md hover:bg-[#6d28d9] border border-[#6d28d9]
+                                 hover:border-white hover:text-white cursor-pointer text-[#6d28d9]">
+                                Finalizada</div>
+                            <div>
+                                <i class="fa-solid fa-trash-can text-red-300 cursor-pointer"></i>
+                                <i class="fa-solid fa-pen-to-square text-green-300 cursor-pointer pl-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    `;
+    renderArea.appendChild(div);
+}
+
+buildCards();
