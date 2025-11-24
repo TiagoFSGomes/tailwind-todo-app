@@ -49,7 +49,6 @@ Este é um aplicativo web de gerenciamento de tarefas (ToDo List) desenvolvido c
 │   │   └── style.css   # Estilos personalizados
 │   └── script/
 │       └── script.js   # Lógica da aplicação
-
 ### Como Utilizar
 1. Clone o repositório
 
