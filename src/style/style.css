@@ -1,3 +1,7 @@
 .bgTransparente {
     background-color:rgba(0, 0, 0, 0.411);
 }
+
+.date-input-color::-webkit-calendar-picker-indicator {
+    filter: invert(78%) sepia(6%) saturate(640%) hue-rotate(179deg) brightness(89%) contrast(89%);
+  }
