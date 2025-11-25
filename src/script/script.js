@@ -1,5 +1,3 @@
-console.log('devcode');
-
 /*
 Função abrir pop-up nova tarefa
 */
@@ -43,17 +41,20 @@ function getInfoByAddForm() {
     console.log(inputObj);
     addToLocalStorage(inputObj);
     fecharModal();
+    buildCards();
 
 }
 
 /*
-Função armazenar dados localmente dentro de uma array
+Função armazenar dados localmente
 */
 function addToLocalStorage(Obj) {
 
     const data = getFromLocalStorage();
 
-    localStorage.setItem('tarefas', JSON.stringify([Obj]));
+    data.push(Obj);
+
+    localStorage.setItem('tarefas', JSON.stringify(data));
 }
 /*
 Função responsável por resgatar e decodificar os dados da tarefa que foram salvos na memória local do navegador
@@ -61,30 +62,61 @@ Função responsável por resgatar e decodificar os dados da tarefa que foram sa
 function getFromLocalStorage() {
     const checkLocalStorage = JSON.parse(localStorage.getItem('tarefas'));
 
-    if ()//Continuar...
-
+    if (checkLocalStorage !== null) {
+        const data = JSON.parse(localStorage.getItem('tarefas'));
         return data;
+    } else {
+        return [];
+    }
 }
-//getFromLocalStorage(); APAGAR
-
 /*
 Função para renderizar os cards
 */
 function buildCards() {
     const renderArea = document.getElementById('render-area');
     const data = getFromLocalStorage();
+    renderArea.innerHTML = '';
 
-    const div = document.createElement('div');
-    div.classList = 'h-56 bg-[#6d28d9] rounded-md p-6 hover:opacity-80';
+    if (data.length === 0) {
+        const div = document.createElement('div');
+        div.classList = `
+            h-56 
+            flex 
+            justify-center 
+            items-center 
+            border 
+            border-dashed 
+            border-[#94A3B8] 
+            rounded-md 
+            p-6 
+            hover:opacity-80 
+            hover:bg-[#141E33] 
+            text-[#94A3B8] 
+            cursor-pointer
+        `;
+        div.innerText = 'Adicionar atividade';
+        renderArea.appendChild(div);
+        return;
+    }
 
-    div.innerHTML = `
-                           <p class="font-bold text-white text-xl">${data[0].atividade}</p>
+
+    for (let i = 0; i < data.length; i++) {
+        const div = document.createElement('div');
+        div.classList = `
+            h-56
+            bg-[#6d28d9]
+            rounded-md
+            p-6
+            hover:opacity-80`;
+
+        div.innerHTML = `
+                           <p class="font-bold text-white text-xl">${data[i].atividade}</p>
                 <div class="flex flex-col justify-between h-[90%]">
-                    <p class="text-xs text-[#94A3B8]">${data[0].descricao}</p>
+                    <p class="text-xs text-[#94A3B8]">${data[i].descricao}</p>
                     <div>
                         <div class="flex  items-center gap-2  text-white text-base">
                             <i class="fa-regular fa-calendar-days"></i>
-                            <p>${data[0].prazo}</p>
+                            <p>${data[i].prazo}</p>
                         </div>
                         <div class="w-full border-b border-dashed border-[#94A3B8] mt-4"></div>
 
@@ -101,7 +133,12 @@ function buildCards() {
                 </div>
             </div>
     `;
-    renderArea.appendChild(div);
+        renderArea.appendChild(div);
+    }
+
 }
 
 buildCards();
+
+
+
